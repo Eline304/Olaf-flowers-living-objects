@@ -1,0 +1,63 @@
+.aboutmebackground {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f5f8f2 100%);
+  padding: 5% 20%;
+  max-width: 100vw;
+}
+  
+.aboutme {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 4px 32px 32px rgb(204, 204, 204);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 5%;
+  background-color: rgba(245, 248, 242, 0.9);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.aboutme:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.aboutme p {
+  font-size: 15px;
+  text-align: left;
+  padding-right: 5%;
+  color: #202218;
+  font-size: 25px;
+}
+
+.aboutme img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.aboutme img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 1080px) {
+  .aboutme {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    padding: 3em 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutme {
+    padding: 2em 1.5em;
+  }
+
+}

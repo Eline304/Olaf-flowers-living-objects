@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Te Koop | Olaf Veenhuizen</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/corylustekoop.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="content">
+
+        <header>
+
+            <a href="index.html">
+                <img src="../images/logo3.jpg" alt="Logo">
+            </a>
+
+            <nav>
+                <ul class="menu">
+
+                    <li><a href="../index.html">Home</a></li>
+
+                    <li><a href="aboutme.html">Over mij</a></li>
+
+                    <li><a href="objects.html">Galerij</a></li>
+
+                    <li class="dropdown">
+                        <a href="#">Te koop</a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="corylustekoop.html">
+                                    Corylus kransen
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="workshops.html">Workshops</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+        <h1 class="title2">Te koop</h1>
+
+        <p class="intros">
+            Zie hier mijn objecten die direct te koop staan.
+            Interesse in een van mijn objecten?
+            Vul het formulier onderaan de pagina in.
+        </p>
+
+        <section class="objects-container">
+
+            <h2>Corylus schalen</h2>
+
+            <div class="object-gallery">
+
+                <div class="object-card">
+
+                    <img src="../images/corylus/plat.jpg" alt="Corylus krans plat">
+
+                    <div class="object-info">
+
+                        <h3>Corylus krans plat</h3>
+
+                        <p class="price">
+                            Diameter 70 cm<br>
+                            Hoog 25 cm<br>
+                            €125
+                        </p>
+
+                        <p class="price">
+                            Diameter 60 cm<br>
+                            Hoog 20 cm<br>
+                            €65
+                        </p>
+
+                        <p class="price">
+                            Diameter 45 cm<br>
+                            Hoog 20 cm<br>
+                            €37,50
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="object-card">
+
+                    <img src="../images/corylus/schalen2.jpg" alt="Corylus schaal">
+
+                    <div class="object-info">
+
+                        <h3>Corylus schaal</h3>
+
+                        <p class="price">
+                            Corylus XL schaal<br>
+                            Diameter 55 cm<br>
+                            Hoog 30 cm<br>
+                            €82,50
+                        </p>
+
+                        <p class="price">
+                            Corylus L schaal<br>
+                            Diameter 45 cm<br>
+                            Hoog 35 cm<br>
+                            €62,50
+                        </p>
+
+                        <p class="price">
+                            Corylus M schaal<br>
+                            Diameter 45 cm<br>
+                            Hoog 25 cm<br>
+                            €47,50
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="object-card">
+
+                    <img src="../images/corylus/rondom.jpg" alt="Corylus krans rondom">
+
+                    <div class="object-info">
+
+                        <h3>Corylus krans rondom</h3>
+
+                        <p class="price">
+                            Diameter 100 cm<br>
+                            Hoog 25 cm<br>
+                            €175
+                        </p>
+
+                        <p class="price">
+                            Diameter 90 cm<br>
+                            Hoog 20 cm<br>
+                            €150
+                        </p>
+
+                        <p class="price">
+                            Diameter 70 cm<br>
+                            Hoog 20 cm<br>
+                            €125
+                        </p>
+
+                        <p class="price">
+                            Diameter 70 cm<br>
+                            Hoog 20 cm<br>
+                            €65
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="object-card">
+
+                    <img src="../images/corylus/rondom2.jpg" alt="Corylus krans rondom gewikkeld">
+
+                    <div class="object-info">
+
+                        <h3>Corylus krans rondom gewikkeld</h3>
+
+                        <p class="price">
+                            Diameter 60 cm<br>
+                            Hoog 15 cm<br>
+                            €55
+                        </p>
+
+                        <p class="price">
+                            Diameter 50 cm<br>
+                            Hoog 20 cm<br>
+                            €42,50
+                        </p>
+
+                        <p class="price">
+                            Diameter 40 cm<br>
+                            Hoog 18 cm<br>
+                            €32,50
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="contactform-wrapper">
+
+            <form class="contactform"
+                  method="post"
+                  action="contact-process.php">
+
+                <label for="subject">Onderwerp</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="Onderwerp van je bericht">
+
+                <label for="email">Jouw e-mail</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="jouw@email.nl">
+
+                <label for="message">Bericht</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="6"
+                    required
+                    placeholder="Schrijf hier je bericht..."></textarea>
+
+                <button type="submit">
+                    Verstuur bericht
+                </button>
+
+            </form>
+
+        </div>
+
+        <footer>
+
+            <div class="footer">
+
+                <b>Contact</b>
+
+                <br><br>
+
+                <p>
+
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                         width="20"
+                         height="20"
+                         fill="currentColor"
+                         viewBox="0 0 16 16"
+                         style="vertical-align: middle; margin-right: 8px;">
+
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-5.803 3.482L15 12.383V5.383zm-14 0v7l5.803-3.518L1 5.383zm6.761 4.23L1 13h14l-6.761-3.387L8 10.566l-.239-.953z"/>
+                    </svg>
+
+                    E-mail:
+                    <a href="mailto:o.veenhuizen@gmail.com">
+                        o.veenhuizen@gmail.com
+                    </a>
+
+                </p>
+
+            </div>
+
+        </footer>
+
+        <section class="copyright">
+            © Copyright by Olaf Veenhuizen
+        </section>
+
+    </div>
+
+</body>
+
+</html>

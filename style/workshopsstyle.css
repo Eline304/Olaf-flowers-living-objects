@@ -1,0 +1,181 @@
+.workshops {
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 3em;
+    background-color: hwb(84 78% 18%);
+}
+
+.workshopsform  h2 {
+  text-align: center;
+  font-size: 48px;
+  padding: 2em 0em 1em 0em;
+  margin: 0px;
+  max-width: 100vw;
+}
+
+p {
+  max-width: 80%;
+}
+
+.intros {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  max-width: 100vw;
+  font-size: 25px;
+  padding: 0em 8em;
+  line-height: 1.5;
+}
+
+.workshoppics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding: 50px;
+  margin: 0px;
+  background-color: hwb(84 78% 18%);
+}
+
+.workshoppics img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 4px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshoppics img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.workshopsform {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  background-color: #fdfdfd; /* lichte, warme achtergrond */
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 40px 10%;
+  padding: 40px 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.workshopsform:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.workshopsform p.intros {
+  text-align: center;
+  font-size: 22px;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #333;
+  padding: 0 10px;
+}
+
+/* FORM CONTAINER */
+.contactform-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.contactform {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: 'Poiret One', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contactform:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.contactform label {
+  font-size: 18px;
+  color: #444;
+  font-weight: 500;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: 'Noto Sans Display', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  outline: none;
+  border: 2px solid #a4cfae; /* frisse groene tint passend bij botanisch thema */
+  box-shadow: 0 0 10px rgba(164, 207, 174, 0.3);
+}
+
+.contactform button {
+  padding: 14px 0;
+  border: none;
+  border-radius: 50px;
+  background-color: #a4cfae;
+  color: #1b2c1b;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.contactform button:hover {
+  background-color: #8bb89b;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+
+@media screen and (max-width: 1280px) {
+  .workshoppics {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px;
+  }
+
+  .workshopsform
+  {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .workshoppics {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .workshoppics {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .workshoppics {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}

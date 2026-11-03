@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Olaf Veenhuizen</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/contactstyle.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="content">
+
+    <header>
+
+        <a href="index.html">
+            <img src="../images/logo3.jpg" alt="Logo">
+        </a>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aboutme.html">Over mij</a></li>
+                <li><a href="objects.html">Galerij</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Te koop</a>
+
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="corylustekoop.html">Corylus kransen</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <img class="workspacepic" src="../images/workspace.jpg" alt="Workspace">
+
+    <div class="contacttext" style="text-align:center; font-size:20px; line-height:1.6;">
+
+        <p>
+            Interesse in een van mijn unieke botanische objecten of een workshop?<br>
+            Neem gerust contact op via e-mail:
+        </p>
+
+        <p>
+            <a class="maillink" href="mailto:o.veenhuizen@gmail.com">
+                o.veenhuizen@gmail.com
+            </a>
+        </p>
+
+        <p>
+            Of vul het formulier hieronder in:
+        </p>
+
+    </div>
+
+    <div class="contactform-wrapper">
+
+        <form class="contactform"
+              method="post"
+              action="contact-process.php">
+
+            <label for="subject">Onderwerp</label>
+
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Onderwerp van je bericht">
+
+            <label for="email">Jouw e-mail</label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="jouw@email.nl">
+
+            <label for="message">Bericht</label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                placeholder="Schrijf hier je bericht..."></textarea>
+
+            <button type="submit">
+                Verstuur bericht
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <div class="footer">
+
+        <b>Contact</b>
+
+        <br><br>
+
+        <p>
+            E-mail:
+            <a href="mailto:o.veenhuizen@gmail.com">
+                o.veenhuizen@gmail.com
+            </a>
+        </p>
+
+    </div>
+
+</footer>
+
+<section class="copyright">
+    © Copyright by Olaf Veenhuizen
+</section>
+
+</body>
+</html>
