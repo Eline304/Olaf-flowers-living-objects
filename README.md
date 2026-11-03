@@ -24,4 +24,4 @@ CSS3
 
 ## Development
 
-Independently developed as an early web development project during my studies.
+Independently developed for a client as an early web development project during my studies.
